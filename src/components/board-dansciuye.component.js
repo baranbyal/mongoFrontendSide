@@ -12,7 +12,7 @@ export default class BoardUser extends Component {
   }
 
   componentDidMount() {
-    UserService.getAdminBoard().then(
+    UserService.getDansciUyeBoard().then(
       response => {
         this.setState({
           content: response.data
